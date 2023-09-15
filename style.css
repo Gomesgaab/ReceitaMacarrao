@@ -1,0 +1,506 @@
+/*classes de edição de imagem*/
+.circle:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.circle img {
+  border-radius: 25px;
+  box-shadow: 0px 1px 10px #000000;
+}
+
+.circle {
+  position: absolute;
+  width: 94px;
+  height: 100px;
+  text-align: center;
+  left: 28.3%;
+  top: 10%;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/*Fim lasses de edição de imagem*/
+
+/*edção de tabela*/
+.table {
+  position: absolute;
+  max-width: 22%;
+  max-height: 225%;
+  border-radius: 2%;
+  background-color: #fff;
+  left: 28.2%;
+  top: -6%;
+}
+
+.table:hover {
+  background-color: #ee93399d;
+  transform: scale(1.1);
+  transition-duration: 1.5s;
+}
+
+.table {
+  border: 1px solid #ff6600;
+  width: 37% !important;
+  /*Importante manter o !important rs */
+  margin-top: 22%;
+
+}
+
+/*editor de texto da tabela*/
+.txt {
+  font: icon;
+  font-size: 17px;
+}
+
+.txt1 {
+  position: absolute;
+  right: 42%;
+}
+
+/* fim editor de texto tablela */
+/*fim editor de tabela*/
+
+/*Efeito digitação/*/
+* {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif, Arial;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  display: grid;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 50%;
+  left: 15%;
+}
+
+.typedtext {
+  margin-top: 10%;
+  border-right: 3px solid #000000;
+  animation: blinkTextCursor 1000ms steps(10) infinite normal;
+  height: 30px;
+  margin-bottom: 10px;
+  color: #000000;
+  display: flex;
+  font-size: 24px;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #000000;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/*Fim Efeito Digitação*/
+
+/*Fim editor de tabela*/
+/* editor de texto informaçoes */
+.inf {
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Editores do textos do modo de preparo*/
+.item {
+  font-size: 20px;
+}
+
+/*fim Editores do textos do modo de preparo*/
+
+/* Edtores do texto do titulo Macarrão com molho rapido*/
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+
+.tlt {
+  margin: 0;
+  font-size: 40px;
+  padding: 0;
+  color: #ee850e;
+  text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+    0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+    0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+    -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+
+}
+
+/*fim Editores do textos do modo de preparo*/
+
+span {
+  transform: scale(0.9);
+  display: inline-block;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*  */
+
+/*favorito*/
+.heart-container {
+  --heart-color: #ff5b89;
+  position: absolute;
+  width: 2%;
+  height: 50px;
+  transition: 3s;
+  left: 75%;
+  top: 60%;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+.heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  /* animação do coração */
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  /* Animação de preenchimento do coração */
+  100% {
+    transform: scale(1.4);
+    /* animação de preenchimento */
+    opacity: 0;
+    display: none;
+  }
+}
+
+/*estrelinhas*/
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #0e0d0d;
+  --fill: #ffc73a;
+  position: absolute;
+  right: 30%;
+  height: 30%;
+  position: absolute;
+  top: 60%;
+}
+
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 204;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked~label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+/**/
+/* definindo colunas */
+#site {
+  /* Definimos a largura da página */
+  width: 1000px;
+  /* Definirmos a altura da página*/
+  height: 700px;
+  /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+  /*top : posição de cima */
+  margin-top: 0;
+  /* left: posição de esquerda*/
+  margin-left: auto;
+  /* bottom : posição de baixo */
+  margin-bottom: 0;
+  /* right : posição de direita */
+  margin-right: auto;
+  /* Aqui definiremos a cor de fundo da página */
+  background-color: #666;
+}
+
+#header {
+  /*definimos a largura da div*/
+  width: 120%;
+  /* altura da div */
+  height: 100px;
+  /* Cor de fundo da div */
+  background-color: #fff;
+}
+
+#conteudo {
+  /* definimos a largura da div*/
+  width: 1200px;
+  /* altura da div */
+  height: 750px;
+  /* Cor de fundo da div */
+  background-color: #fff;
+  /* bordas redondas */
+  border-radius: 0%;
+}
+
+#footer {
+  /*Novamente definimos a largura da div*/
+  width: 120%;
+  /* altura da div */
+  height: 30%;
+  /* Cor de fundo da div */
+  background-color: #fff;
+}
+
+#conteudo-left {
+  /*x  definimos a largura da div*/
+  width: 42.2%;
+  /* altura da div */
+  height: 99.9%;
+  /* O atributo Float é utilizado para fazermos o nosso bloco(div)
+    flutue e se posicione onde queremos na página,
+    quando escolhemos left*/
+  float: left;
+  /* Cor de fundo da div */
+  background-color: #fff;
+}
+
+#conteudo-right {
+  /*Novamente definimos a largura da div*/
+  width: 693.4px;
+  /* altura da div */
+  height: 500px;
+  /* */
+  float: left;
+  /* Cor de fundo da div */
+  background-color: #fff;
+}
+
+/* Botao git */
+.btn {
+  display: grid;
+  place-items: center;
+  background: #e3edf7;
+  padding: 0.4em;
+  /* tamanho */
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px #00000026,
+    -6px -6px 10px -1px #ffffffb3;
+  border: 1px solid #00000000;
+  cursor: pointer;
+  transition: transform 0.5s;
+  position: absolute;
+  left: 74.7%;
+  top: 66%;
+}
+
+.btn:hover {
+  box-shadow: inset 4px 4px 6px 1px #00000033,
+    inset 4px 4px 6px 1px #d41414b3,
+    0.5px 0.5px 0px #d40000,
+    0.5px 0.5px 0px #00000026,
+    0px 12px 10px -10px #0000000d;
+  border: 1px solid #0000001a;
+  transform: translateY(0.5em);
+}
+
+.btn svg {
+  transition: transform 0.5s;
+}
+
+.btn:hover svg {
+  transform: scale(0.9);
+  fill: #333333;
+}
+
+/* fim botão do github */
